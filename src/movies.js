@@ -58,10 +58,9 @@ function dramaMoviesScore(moviesArray) {
 function orderByYear(moviesArray) {
     const sortedMovies = [...moviesArray].sort((a, b) => {
       if (a.year === b.year) {
-        // If the years are the same, sort by title
         return a.title.localeCompare(b.title);
       }
-      return a.year - b.year; // Otherwise, sort by year
+      return a.year - b.year; 
     });
     return sortedMovies;
   }
